@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>iPhone UI</title>
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/panes.css" rel="stylesheet" type="text/css" />
+	<link href="css/buttons.css" rel="stylesheet" type="text/css" />
+	<link href="css/forms.css" rel="stylesheet" type="text/css" />
+	<link href="css/badges.css" rel="stylesheet" type="text/css" />
+	<link href="css/lists.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div class="screen">
+	<div class="action sheet">
+		<label>This is a label that explains what is happening</label>
+		<button type="button" class="red">Red button</button>
+		<button type="button" class="green">Green button</button>
+		<button type="button" class="grey">Grey button</button>
+		<br />
+		<button type="button" class="cancel">Cancel button</button>
+		<button type="button" class="cancel" disabled="disabled">Disabled button</button>
+	</div>
+</div>
+
+<div class="screen">
+	<h1>This is a heading</h1>
+	<ol class="segment three">
+		<li class="selected">One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ol>
+	<ol class="segment three">
+		<li>One</li>
+		<li class="selected">Two</li>
+		<li>Three</li>
+	</ol>
+	<ol class="segment three">
+		<li>One</li>
+		<li>Two</li>
+		<li class="selected">Three</li>
+	</ol>
+	<ol class="segment two">
+		<li class="selected">One</li>
+		<li>Two</li>
+	</ol>
+	<ol class="segment two">
+		<li>One</li>
+		<li class="selected">Two</li>
+	</ol>
+</div>
+
+<div class="screen">
+	<form>
+		<label>Label <span>Small text</span></label>
+		<fieldset>
+			<div>
+				<input type="text" placeholder="test" />
+			</div>
+		</fieldset>
+		<fieldset>
+			<div>
+				<label>Item 1</label>
+				<div class="on-off">
+					<span>On</span><span>Off</span>
+					<div class="knob"></div>
+				</div>
+			</div>
+			<div>
+				<label>Item 2</label>
+				<div class="on-off on">
+					<span>On</span><span>Off</span>
+					<div class="knob"></div>
+				</div>
+			</div>
+			<div>
+				<label>Item with value</label>
+				<select>
+					<option>Test</option>
+				</select>
+			</div>
+		</fieldset>
+		<button type="button">Button</button>
+		<button type="button" class="small">Button</button>
+		<button type="button" class="small blue">Button</button>
+	</form>
+</div>
+
+<div class="screen">
+	<div class="list">
+		<h2>Header 1</h2>
+		<ul>
+			<li>List item one</li>
+			<li>List item two</li>
+			<li><a href="#">List item with link</a></li>
+			<li>List item four</li>
+			<li>List item five</li>
+			<li>List item six</li>
+		</ul>
+		<h2>Header 2</h2>
+		<ul>
+			<li>Another item</li>
+		</ul>
+	</div>
+</div>
+
+<div class="screen">
+	<span class="red badge">1</span>
+	<span class="red badge">15</span>
+</div>
+
+</body>
+</html>
