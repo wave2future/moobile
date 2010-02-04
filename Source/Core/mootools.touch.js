@@ -130,7 +130,9 @@ Touch.Gesture = new Class({
 				startX: page.pageX,
 				startY: page.pageY,
 				startTime: $time(),
-				direction: ""
+				deltaX: 0,
+				deltaY: 0,
+				direction: "tap"
 			};
 		}, this);
 		this.fireEvent('start', [this.touches]);
