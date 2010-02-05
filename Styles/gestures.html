@@ -25,8 +25,9 @@
 
 <body>
 	<h1>
-		<a href="index.html" class="back">back</a>
+		<a href="index.html" class="small back button">back</a>
 		<span>moobile</span>
+		<button>Save</button>
 	</h1>
 	<form>
 		<label>Try it: <span>gestures logged above</span></label>
@@ -38,7 +39,7 @@
 		var touch = new Touch.Gesture($(document.body));
 		touch.addEvent('gesture', function(touches){
 			if (touches.length > 0){
-				$$('h1').set('text', touches[touches.length - 1].direction);
+				$$('h1 span').set('text', touches[touches.length - 1].direction);
 			}
 		});
 	});
