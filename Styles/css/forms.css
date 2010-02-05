@@ -1,11 +1,11 @@
 FORM	{
 	background: -webkit-gradient(linear, left top, right top, from(#C5CCD4), to(#CBD2D8), color-stop(0.72, #C5CCD4), color-stop(0.73, #CBD2D8)) repeat;
-	bottom: 0;
+	/*/bottom: 0;*/
 	padding: 20px 10px;
-	position: absolute;
+	/*position: absolute;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: 0;*/
 	-webkit-background-size: 7px 1px;
 }
 	FORM LABEL	{

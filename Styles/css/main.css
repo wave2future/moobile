@@ -32,6 +32,25 @@ H1	{
 	font-size: 20px;
 	height: 42px;
 	line-height: 42px;
+	position: relative;
 	text-align: center;
 	text-shadow: 0 -1px 0 #666;
 }
+	H1 A	{
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+	H1 SPAN	{
+		display: block;
+		margin: 0 auto;
+		max-width: 160px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	H1 BUTTON	{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}

@@ -10,9 +10,12 @@
 	<link href="css/forms.css" rel="stylesheet" type="text/css" />
 	<link href="css/badges.css" rel="stylesheet" type="text/css" />
 	<link href="css/lists.css" rel="stylesheet" type="text/css" />
+	<script src="../Source/Core/mootools.core.js" type="text/javascript"></script>
+	<script src="../Source/Touch/Touch.js" type="text/javascript"></script>
+	<script src="../Source/Touch/Touch.Gesture.js" type="text/javascript"></script>
 	<style  type="text/css">
 		HTML, BODY	{
-			min-height: 440px;
+			height: 390px;
 			margin: 0;
 			padding: 0;
 			width: 320px;
@@ -21,18 +24,24 @@
 </head>
 
 <body>
-	<h1>moobile</h1>
-	<div class="list">
-		<h2>Styles</h2>
-		<ul>
-			<li><a href="styles.form.html">Forms</a></li>
-			<li><a href="styles.buttons.html">Buttons</a></li>
-			<li><a href="styles.segments.html">Segments</a></li>
-		</ul>
-		<h2>Interactions</h2>
-		<ul>
-			<li><a href="gestures.html">Gestures check</a></li>
-		</ul>
-	</div>
+	<h1>
+		<a href="index.html" class="back">back</a>
+		<span>moobile</span>
+	</h1>
+	<form>
+		<label>Try it: <span>gestures logged above</span></label>
+	</form>
 </body>
+
+<script type="text/javascript">
+	window.addEvent('load', function(){
+		var touch = new Touch.Gesture($(document.body));
+		touch.addEvent('gesture', function(touches){
+			if (touches.length > 0){
+				$$('h1').set('text', touches[touches.length - 1].direction);
+			}
+		});
+	});
+</script>
+
 </html>
